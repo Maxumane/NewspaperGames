@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Matrix.cpp
+iostream
+-
+algorithm
+-
+Matrix.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Matrix.h
+random
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/random
+
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Matrix.h
+stdlib.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/stdlib.h
+vector
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/vector
+
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.cpp
+SudoMatrix.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.h
+
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.h
+Matrix.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Matrix.h
+
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/main.cpp
+iostream
+-
+Matrix.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Matrix.h
+SudoMatrix.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.h
+bits/stdc++.h
+-
+

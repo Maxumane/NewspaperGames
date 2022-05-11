@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Matrix.cpp">
+			<Option target="Sudoku"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Matrix.h">
+			<Option target="Sudoku"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.cpp">
+			<Option target="Sudoku"/>
+		</Unit>
+		<Unit filename="/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.h">
+			<Option target="Sudoku"/>
+		</Unit>
 		<Unit filename="/cygdrive/d/JobPrep/CPlusPrac/Sudoku/main.cpp">
 			<Option target="Sudoku"/>
 		</Unit>

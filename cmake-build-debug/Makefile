@@ -143,6 +143,60 @@ Sudoku/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/build
 .PHONY : Sudoku/fast
 
+Matrix.o: Matrix.cpp.o
+
+.PHONY : Matrix.o
+
+# target to build an object file
+Matrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/Matrix.cpp.o
+.PHONY : Matrix.cpp.o
+
+Matrix.i: Matrix.cpp.i
+
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
+SudoMatrix.o: SudoMatrix.cpp.o
+
+.PHONY : SudoMatrix.o
+
+# target to build an object file
+SudoMatrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/SudoMatrix.cpp.o
+.PHONY : SudoMatrix.cpp.o
+
+SudoMatrix.i: SudoMatrix.cpp.i
+
+.PHONY : SudoMatrix.i
+
+# target to preprocess a source file
+SudoMatrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/SudoMatrix.cpp.i
+.PHONY : SudoMatrix.cpp.i
+
+SudoMatrix.s: SudoMatrix.cpp.s
+
+.PHONY : SudoMatrix.s
+
+# target to generate assembly for a file
+SudoMatrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/SudoMatrix.cpp.s
+.PHONY : SudoMatrix.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +233,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Sudoku"
+	@echo "... Matrix.o"
+	@echo "... Matrix.i"
+	@echo "... Matrix.s"
+	@echo "... SudoMatrix.o"
+	@echo "... SudoMatrix.i"
+	@echo "... SudoMatrix.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

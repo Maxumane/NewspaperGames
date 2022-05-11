@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Matrix.cpp" "/cygdrive/d/JobPrep/CPlusPrac/Sudoku/cmake-build-debug/CMakeFiles/Sudoku.dir/Matrix.cpp.o"
+  "/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.cpp" "/cygdrive/d/JobPrep/CPlusPrac/Sudoku/cmake-build-debug/CMakeFiles/Sudoku.dir/SudoMatrix.cpp.o"
   "/cygdrive/d/JobPrep/CPlusPrac/Sudoku/main.cpp" "/cygdrive/d/JobPrep/CPlusPrac/Sudoku/cmake-build-debug/CMakeFiles/Sudoku.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
