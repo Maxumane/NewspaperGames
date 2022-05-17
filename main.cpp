@@ -6,9 +6,9 @@ using namespace std;
 
 int main()
 {
-/*    cout << 5/3 << " " << 5%3;*/
-    SudoMatrix SM(9);
+    cout << 5/3 << " " << 5%3;
+/*    SudoMatrix SM(9);
     SM.fillMatrix();
-    SM.printSudo();
+    SM.printSudo();*/
     return 0;
 }

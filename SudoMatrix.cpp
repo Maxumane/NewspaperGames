@@ -5,7 +5,7 @@
 #include "SudoMatrix.h"
 SudoMatrix::SudoMatrix(int size) {
     this->size = size;
-    SqrtSize = sqrt(size);
+    boxSize = sqrt(size);
     for (int i = 0; i < size; i++) {
         matrix.push_back(vector<int>{});
         for (int j = 0; j < size; j++) {
@@ -48,7 +48,7 @@ bool SudoMatrix::checkRow(int row, int target) {
 }
 
 bool SudoMatrix::checkBox(int row, int column, int target) {
-
+    int Xbox = row/2
 }
 
 bool SudoMatrix::checkCol(int column, int target) {
