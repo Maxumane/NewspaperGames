@@ -4,7 +4,12 @@
 
 #ifndef SUDOKU_SUDOMATRIX_H
 #define SUDOKU_SUDOMATRIX_H
-#include "Matrix.h"
+#include "vector"
+#include "algorithm"
+#include "math.h"
+#include "iostream"
+#include "stdlib.h"
+using namespace std;
 /**
  *    1 2 3   4 5 6   7 8 9
  *    ---------------------
@@ -22,27 +27,29 @@
  *
  * */
 class SudoMatrix {
-    Matrix r1c1;
-    Matrix r1c2;
-    Matrix r1c3;
-    Matrix r2c1;
-    Matrix r2c2;
-    Matrix r2c3;
-    Matrix r3c1;
-    Matrix r3c2;
-    Matrix r3c3;
+    vector<vector<int>> matrix;
+    int size;
+    int boxSize;
 public:
-    vector<vector<Matrix>> SudoMap {
-            {r1c1, r1c2, r1c3},
-            {r2c1, r2c2, r2c3},
-            {r3c1, r3c2, r3c3}
-    };
     SudoMatrix(){};
+    SudoMatrix(int size);
     void printSudo() {
-        for (int i = 0; i < 3; i++) {
-
+        for (int i = 0; i < matrix.size(); i++) {
+            for (int j = 0; j < matrix[i].size(); j++) {
+                cout << matrix[i][j];
+                if ((j+1)%boxSize == 0) {
+                    cout << "|";
+                }
+            }
+            cout << endl;
         }
     }
+    void fillMatrix();
+    bool checkRow(int row, int target);
+    bool checkCol(int column, int target);
+    bool checkBox(int row, int column, int target);
+    bool checkIndex(int row, int column, int target);
+    void setValue(int row, int column, int target);
 };
 
 

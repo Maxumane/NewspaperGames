@@ -3,4 +3,4 @@ project(Sudoku)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Sudoku main.cpp Matrix.cpp Matrix.h SudoMatrix.cpp SudoMatrix.h)
+add_executable(Sudoku main.cpp SudoMatrix.cpp SudoMatrix.h)
