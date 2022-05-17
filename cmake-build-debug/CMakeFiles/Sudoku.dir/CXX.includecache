@@ -22,11 +22,3 @@ iostream
 stdlib.h
 /cygdrive/d/JobPrep/CPlusPrac/Sudoku/stdlib.h
 
-/cygdrive/d/JobPrep/CPlusPrac/Sudoku/main.cpp
-iostream
--
-SudoMatrix.h
-/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.h
-bits/stdc++.h
--
-

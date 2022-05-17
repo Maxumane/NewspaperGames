@@ -18,12 +18,8 @@ void SudoMatrix::fillMatrix() {
     int toReplace = rand() % 9 + 1;
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
-            toReplace = rand() % 9 + 1;
             while (!checkIndex(i,j,toReplace)) {
-                toReplace++;
-                if (toReplace > 9) {
-                    toReplace = 1;
-                }
+                toReplace = rand() % 9 + 1;
             }
             matrix[i][j] = toReplace;
             }
@@ -31,7 +27,7 @@ void SudoMatrix::fillMatrix() {
 }
 
 bool SudoMatrix::checkIndex(int row, int column, int target) {
-    if (checkRow(row, target) && checkCol(column, target)) {
+    if (checkRow(row, target) && checkCol(column, target) && checkBox(row, column, target)) {
         return true;
     }
     return false;
@@ -48,7 +44,16 @@ bool SudoMatrix::checkRow(int row, int target) {
 }
 
 bool SudoMatrix::checkBox(int row, int column, int target) {
-    int Xbox = row/2
+    int Xbox = (row/boxSize) * boxSize;
+    int Ybox = (column/boxSize) * boxSize;
+    for (int r = Xbox; r < (Xbox + boxSize); r++) {
+        for (int c = Ybox; c < (Ybox + boxSize); c++) {
+            if (matrix[r][c] == target) {
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 bool SudoMatrix::checkCol(int column, int target) {
