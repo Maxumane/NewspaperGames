@@ -6,9 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.cpp
-SudoMatrix.h
-/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Dictionary.h
+iostream
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/iostream
+fstream
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/fstream
+set
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/set
+Windows.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Windows.h
+
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SpellingBee.cpp
+SpellingBee.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SpellingBee.h
+
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SpellingBee.h
+Dictionary.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Dictionary.h
+vector
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/vector
+algorithm
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/algorithm
 
 /cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.h
 vector
@@ -21,4 +39,16 @@ iostream
 /cygdrive/d/JobPrep/CPlusPrac/Sudoku/iostream
 stdlib.h
 /cygdrive/d/JobPrep/CPlusPrac/Sudoku/stdlib.h
+
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/main.cpp
+iostream
+-
+SudoMatrix.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SudoMatrix.h
+Dictionary.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/Dictionary.h
+SpellingBee.h
+/cygdrive/d/JobPrep/CPlusPrac/Sudoku/SpellingBee.h
+bits/stdc++.h
+-
 

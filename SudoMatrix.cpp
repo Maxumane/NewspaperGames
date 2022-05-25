@@ -14,17 +14,69 @@ SudoMatrix::SudoMatrix(int size) {
     }
 }
 
-void SudoMatrix::fillMatrix() {
-    int toReplace = rand() % 9 + 1;
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            while (!checkIndex(i,j,toReplace)) {
-                toReplace = rand() % 9 + 1;
+void SudoMatrix::prefillDiagonal() {
+    fillSubmatrix(0,0, true);
+    fillSubmatrix(3,3, true);
+    fillSubmatrix(6,6, true);
+}
+
+void SudoMatrix::fillSubmatrix(int xStart, int yStart, bool diagonal) {
+    int next = rand() % 9 + 1;
+    for (int row = xStart; row < (xStart + boxSize); row++) {
+        for (int col = yStart; col < (yStart + boxSize); col++) {
+            if (diagonal) {
+                while (!checkBox(xStart, yStart, next)) {
+                    next = rand() % 9 + 1;
+                }
+            } else {
+                while (!checkIndex(row, col, next)) {
+                    next = rand() % 9 + 1;
+                }
             }
-            matrix[i][j] = toReplace;
-            }
+            matrix[row][col] = next;
+        }
     }
 }
+
+
+bool SudoMatrix::fillMatrix(int row, int column) {
+    if (row >= matrix.size()) {
+        return true;
+    }
+    if (column>=size) {
+        row++;
+        column = 0;
+    }
+    if (matrix[row][column]) {
+        if (column != (size-boxSize)) {
+            column += boxSize;
+        } else {
+            row++;
+            column = 0;
+            if (row >= matrix.size()) {
+                return true;
+            }
+        }
+    }
+    int random = rand() % 9 + 1;
+
+    for (int i = 0; i < size; i++) {
+        if (random > size) {
+            random = 1;
+        }
+        if (checkIndex(row, column, random)) {
+            matrix[row][column] = random;
+            if (fillMatrix(row, column+1)) {
+                return true;
+            }
+            matrix[row][column] = 0; //Backtrack
+        }
+        random++;
+    }
+
+    return false;
+}
+
 
 bool SudoMatrix::checkIndex(int row, int column, int target) {
     if (checkRow(row, target) && checkCol(column, target) && checkBox(row, column, target)) {

@@ -143,6 +143,33 @@ Sudoku/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/build
 .PHONY : Sudoku/fast
 
+SpellingBee.o: SpellingBee.cpp.o
+
+.PHONY : SpellingBee.o
+
+# target to build an object file
+SpellingBee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/SpellingBee.cpp.o
+.PHONY : SpellingBee.cpp.o
+
+SpellingBee.i: SpellingBee.cpp.i
+
+.PHONY : SpellingBee.i
+
+# target to preprocess a source file
+SpellingBee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/SpellingBee.cpp.i
+.PHONY : SpellingBee.cpp.i
+
+SpellingBee.s: SpellingBee.cpp.s
+
+.PHONY : SpellingBee.s
+
+# target to generate assembly for a file
+SpellingBee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sudoku.dir/build.make CMakeFiles/Sudoku.dir/SpellingBee.cpp.s
+.PHONY : SpellingBee.cpp.s
+
 SudoMatrix.o: SudoMatrix.cpp.o
 
 .PHONY : SudoMatrix.o
@@ -206,6 +233,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Sudoku"
+	@echo "... SpellingBee.o"
+	@echo "... SpellingBee.i"
+	@echo "... SpellingBee.s"
 	@echo "... SudoMatrix.o"
 	@echo "... SudoMatrix.i"
 	@echo "... SudoMatrix.s"
